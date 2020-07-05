@@ -1,0 +1,100 @@
+@charset "UTF-8";
+* {font-feature-settings: "palt";}
+
+/* LOGO */
+body { font-size:16pt; }
+.navbar-brand img { height: 50px; width:auto; }
+a,a:hover { text-decoration:none;}
+
+main { margin-top:1em; margin-bottom:1em;}
+h1,h2,h3,h4,h5,h6 { border-left: .5em solid #192e6d; padding-left:.5em; margin:1em 0;}
+h2 { border-left-width: .3em; padding-left:.3em; margin-bottom:.5em;}
+h3 { border-left-width: .1em; padding-left:.1em;margin-bottom:.3em;}
+
+.wrap-main-visual { height:auto; text-align:center;  background-color:black;}
+.wrap-main-visual ul { padding-left:0;}
+.wrap-main-visual img { width:100%; height:auto;}
+.slider img { object-fit: cover;}
+
+main { min-height:90vh;}
+.wrap-footer { background-color:#274b85; color:white;}
+.wrap-footer footer p { text-align:center; margin-bottom:0;}
+.wrap-footer .blk-links { padding:5px 10px; background-color:#2d5390;}
+.wrap-footer .blk-links a {color:white;}
+.wrap-footer .blk-links li { list-style:none;}
+
+
+.wrap-section-news .date {
+}
+
+.wrap-section-news a:hover,
+.wrap-section-coupon a:hover
+{
+    background-color:#f4f4fb;
+}
+
+.wrap-section-news a,
+.wrap-section-service a,
+.wrap-section-coupon a{
+    display:block;
+    padding:2px;
+    font-size:1.3em;
+}
+
+
+
+/* TOP PAGE --------------------------------------------------*/
+
+.wrap-section-service ul,
+.wrap-section-coupon ul,
+.wrap-section-pickup ul{
+    padding:0;
+    margin:0;
+}
+
+.wrap-section-service li,
+.wrap-section-coupon li,
+.wrap-section-pickup li{
+    list-style:none;
+    padding: 10px 0;
+}
+
+/* SERVICE */
+.wrap-section-service a {
+    padding:30px 5px;
+    margin: 0 10px;
+    text-align:center;
+    background-color:#274b85;
+    color:white;
+    border-radius:10px;
+}
+
+.wrap-section-service a:hover {
+        background-color:#616f86;
+}
+
+/* FOOTER */
+
+
+
+
+
+
+
+.wrap-section-news dt{ font-size:0.8em;}
+
+.wrap-section-pickup li img {width:100%;hegiht:auto;}
+/**/
+.slick-arrow { display:none;}
+
+@media (min-width: 768px) {
+    .wrap-main-visual { height:500px; text-align:center;  background-color:black;}
+    .wrap-main-visual img { height:500px; object-fit: cover;}
+
+    .wrap-section-news a,
+    .wrap-section-coupon a{
+	font-size:1.0em;
+    }
+
+}
+
