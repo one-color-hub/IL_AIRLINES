@@ -92,3 +92,184 @@ main { min-height:90vh;}
 
 }
 
+/* .h-inner
+----------------------------------------------- */
+.h-inner {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 25px 0 26px;
+  width: 1000px;
+  height: 90px;
+}
+
+.h-inner > .h-link:last-child {
+  right: 0;
+}
+
+/* .h-logo
+----------------------------------------------- */
+.h-logo {
+  margin-bottom: 0;
+}
+
+.h-logo > a {
+  display: inline-block;
+}
+
+._coop .h-logo > :first-child {
+  margin-right: 38px;
+  width: 228px;
+}
+
+/* .h-link
+----------------------------------------------- */
+.h-link {
+  position: absolute;
+  top: 19px;
+  right: 60px;
+  margin-bottom: 0;
+}
+
+._simple .h-link {
+  top: 36px;
+}
+
+._coop .h-link {
+  /*right: 0;*/
+}
+
+/* .h-logo-02
+----------------------------------------------- */
+.h-logo-02 {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  margin-bottom: 0;
+}
+
+/* .h-list-step
+----------------------------------------------- */
+.h-list-step {
+  position: absolute;
+  top: 51px;
+  right: 60px;
+  display: flex;
+  margin-bottom: 0;
+  width: 460px;
+  color: #333;
+  white-space: nowrap;
+  font-size: 1.3rem;
+  justify-content: space-between;
+}
+
+.h-list-step._col3 {
+  right: 210px;
+  width: 329px;
+}
+
+.h-list-step_inner {
+  position: relative;
+}
+
+.h-list-step_inner::before, .h-list-step_inner::after {
+  position: absolute;
+}
+
+.h-list-step_inner::before {
+  top: -28px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #dce1e5;
+  transform: translateX(-50%);
+}
+
+.h-list-step_inner::after {
+  top: -24px;
+  left: 50%;
+  height: 2px;
+  background-color: #dce1e5;
+}
+
+.h-list-step_inner._step01::after {
+  width: 105px;
+}
+
+._col3 .h-list-step_inner._step01::after {
+  width: 150px;
+}
+
+.h-list-step_inner._step02::after {
+  width: 96px;
+}
+
+._col3 .h-list-step_inner._step02::after {
+  width: 120px;
+}
+
+.h-list-step_inner._step03::after {
+  width: 68px;
+}
+
+._col3 .h-list-step_inner._step03::after {
+  content: none;
+}
+
+.h-list-step_inner._step04::before {
+  left: 25px;
+}
+
+.h-list-step_inner._step04::after {
+  content: none;
+}
+
+.h-list-step_inner._step04 span:first-child {
+  padding-left: 18px;
+}
+
+.h-list-step_inner._step04 span:last-child {
+  padding-left: 10px;
+}
+
+.h-list-step > li {
+  position: relative;
+}
+
+.h-list-step > li[class^='is-'] .h-list-step_inner::before {
+  top: -35px;
+  z-index: 1;
+  background-color: #0000;
+}
+
+.h-list-step > li.is-current .h-list-step_inner::before {
+  width: 24px;
+  height: 26px;
+  background-position: -61px -177px;
+  background-size: 274px auto;
+}
+
+.h-list-step > li.is-checked .h-list-step_inner::before {
+  width: 24px;
+  height: 24px;
+  background-position: -26px -208px;
+  background-size: 274px auto;
+}
+
+._coop .h-list-step {
+  /*right: 0;*/
+}
+
+.h-list-step._request {
+  right: 184px;
+  width: 336px;
+}
+
+.h-list-step._request .h-list-step_inner._step03::after {
+  width: 80px;
+}
+
+.h-list-step._request .h-list-step_inner._step04::before {
+  left: 50%;
+}
